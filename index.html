@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/main.css">
   <title>Frontend Mentor | Ping coming soon page</title>
-
+  <script src="./js/script.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -23,7 +23,9 @@
         <h1>We are launching <span>soon!</span></h1>
         <p>Subscribe and get notified</p>
         <form action="#">
-          <input type="text" id="email" name="email" placeholder="Your email address here...">
+          <div class="container">
+            <input type="text" id="email" name="email" placeholder="Your email address here...">
+          </div>
           <button type="submit">Notify Me</button>
         </form>
       </div>

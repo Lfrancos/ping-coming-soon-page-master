@@ -14,7 +14,7 @@ form.addEventListener('submit', e => {
     if (emailInput.value.length <= 0) {
         e.preventDefault();
         clearError();
-        error('Email field can not be empty');
+        error('Whoops! It looks like you forgot to add your email');
     } else if (!emailInput.value.match(validEmailFormat)) {
         e.preventDefault();
         clearError();

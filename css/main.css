@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, picture {
+  width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.center {
+  margin-inline: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.img-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+main {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 638px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 56px;
+}
+
+h1 {
+  font-size: 1.375rem;
+  margin: 2rem 0;
+  color: #969696;
+}
+
+h1 span {
+  color: #151f29;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+form {
+  margin: 2rem 0;
+}
+
+input {
+  height: 48px;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 3rem;
+  border: 1px solid #4f7df3;
+  color: #4f7df3;
+  padding-left: 1.5rem;
+}
+
+input::-webkit-input-placeholder {
+  margin-left: 1rem;
+  color: #4f7df3;
+  font-size: 0.75rem;
+}
+
+input:-ms-input-placeholder {
+  margin-left: 1rem;
+  color: #4f7df3;
+  font-size: 0.75rem;
+}
+
+input::-ms-input-placeholder {
+  margin-left: 1rem;
+  color: #4f7df3;
+  font-size: 0.75rem;
+}
+
+input::placeholder {
+  margin-left: 1rem;
+  color: #4f7df3;
+  font-size: 0.75rem;
+}
+
+button {
+  height: 48px;
+  width: 100%;
+  border-radius: 3rem;
+  background-color: #4f7df3;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.illustration {
+  margin: 5rem 0;
+}
+
+.flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.3rem;
+}
+
+.circle {
+  width: 31px;
+  height: 31px;
+  border: 0.3px solid #c2d3ff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.cube {
+  width: 21px;
+  height: 21px;
+  background-color: #4f7df3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cube.one {
+  width: 10px;
+  height: 18px;
+}
+
+.cube.three {
+  width: 15px;
+  height: 15px;
+}
+/*# sourceMappingURL=main.css.map */
